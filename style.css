@@ -118,6 +118,52 @@ h1{
 /* .categories_cards>*  */
 
 
+/*courses style goes down there*/
+.wrapp_courses{
+    background-color: #1f2641;
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    gap:2.5rem;
+    padding: 2rem 13%;
+}
+.courses{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.wrapp_courses_card{
+    display: flex;
+    gap: 2rem;
+}
+.wrapp_courses_card img{
+    width:100%;
+    
+}
+.wrapp_courses_card>*{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    flex-basis: 30%;
+    padding-bottom:2rem;
+    background-color: #2e3267;
+    text-align: center;
+}
+.wrapp_courses_card>*:hover{
+    border:2px solid #2e3267;
+    background:transparent;
+}
+.wrapp_courses h3{
+    font-size: 1.3rem;
+    margin:0 1.2rem
+}
+.wrapp_courses_card p{
+    margin: 0 1.2rem;
+}
+.wrapp_courses button{
+    align-self: center;
+    background-color: #f75842;
+    color: inherit;
+}
 /*
 @media screen and (max-width:400px) {
     body{background:rgb(145, 145, 40);
