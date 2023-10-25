@@ -291,3 +291,28 @@ footer .lower_footer{
         flex-grow:1;
     }
 }
+
+@media screen and (max-width:550px) {
+    nav{
+        /* background-color: red; */
+    }
+    .main_details{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapp_details{
+        align-items: center;
+        /* background: green; */
+        text-align: center;
+    }
+    .wrapp_categories .learn_more{
+        align-self: center;
+    }
+    .wrapp_courses_card>*{
+        flex-basis: 50%;
+    }
+    details{
+        flex-basis: 50%;
+    }
+    footer ul{text-align: center;flex-grow: 1;}
+}
