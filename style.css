@@ -10,8 +10,9 @@
     --clr-primary-font:#ffffff;
     --padding-side: 13%;
 }
+body{height: 100%;position: relative;}
 /*header style goes down there*/
-header{
+header,nav{
     background-color: #1f2641;
     color:#ffffff;
 }
@@ -23,6 +24,8 @@ nav{
     padding: 2rem var(--padding-side);
     /* color:white; */
     letter-spacing: 0.12rem;
+    position: sticky;
+    top: 0%;
 }
 nav ul{
     display: flex;
@@ -211,7 +214,41 @@ details p{
 }
 
 /* testimonial style goes down there*/
-
+.wrapp_testimonials{
+    background-color: var(--clr-primary-bg);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding:2rem var(--padding-side);
+}
+.wrapp_testimonials h2{text-align:center;
+    font-size: 1.8rem;
+}
+.wrapp_testimonial_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.testimonial_card{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.testimonial_card img{
+    width: 5.4rem;
+    border:1rem solid var(--clr-secondary-bg);
+    border-radius: 50%;
+}
+.testimonial_card .profile_details{
+    background-color: var(--clr-secondary-bg);
+    padding: 1rem 0.4rem;
+}
 
 /*footer style goes down there*/
 footer{
@@ -278,8 +315,11 @@ footer .lower_footer{
     .categories_cards{padding: 0;}
     .wrapp_courses_card>*{
         flex-basis:45%;
-        background-color: green;
+        /* background-color: green; */
         
+    }
+    .testimonial_card{
+        flex-basis: 55%;
     }
     footer{
         display: flex;

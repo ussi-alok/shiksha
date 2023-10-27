@@ -10,20 +10,20 @@
   </head>
 
   <body>
+    <nav class="nav">
+      <div class="site_logo">Shiksha</div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Course</li>
+        <li>Contact</li>
+        <!-- for mobile -->
+        <li class="hamburger1"></li>
+        <li class="hamburger2"></li>
+        <li class="hamburger3"></li>
+      </ul>
+    </nav>
     <header>
-      <nav>
-        <div class="site_logo">Shiksha</div>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Course</li>
-          <li>Contact</li>
-          <!-- for mobile -->
-          <li class="hamburger1"></li>
-          <li class="hamburger2"></li>
-          <li class="hamburger3"></li>
-        </ul>
-      </nav>
       <div class="main_details">
         <div class="wrapp_details">
           <h1>We provide quality education.</h1>
@@ -160,7 +160,18 @@
 
     <section class="wrapp_testimonials">
       <!-- <h2>Student's Testimonials</h2> -->
-      
+      <h2>Student's Testimonials</h2>
+      <div class="wrapp_testimonial_cards">
+        <div class="testimonial_card">
+          <img src="./images/avatar1.jpg" alt="image" class="image">
+          <div class="name">Alison Burger</div>
+          <div class="designation">Student</div>
+          <p class="profile_details">
+            This is the details of alison burger, she is a very bright student. It's her choice what to 
+            become in their future and that's alright.
+          </p>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -193,5 +204,8 @@
       </ul>
       <div class="lower_footer">Copyright &copy; Shiksha</div>
     </footer>
+
+    <!-- JavaScript file goes down there-->
+    <script src="./index.js"></script>
   </body>
 </html>
